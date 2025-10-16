@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="uz" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ozodbek Sobirov - Full Stack Developer, Software Engineer">
+    <meta name="keywords" content="developer, programmer, full stack, python, javascript, portfolio">
+    <meta name="author" content="Ozodbek Sobirov">
+    <title data-translate="title">Ozodbek Sobirov - Full Stack Developer</title>
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor - Disabled for better usability -->
+    <!-- <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div> -->
+
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#hero" class="logo-link" aria-label="Go to homepage">
+                        <span class="logo-text">Ozodbek</span>
+                    </a>
+                </div>
+
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list" role="menubar">
+                        <li class="nav-item" role="none">
+                            <a href="#hero" class="nav-link" data-translate="nav-home" role="menuitem">Bosh sahifa</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#experience" class="nav-link" data-translate="nav-experience" role="menuitem">Tajriba</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#certificates" class="nav-link" data-translate="nav-certificates" role="menuitem">Sertifikatlar</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#projects" class="nav-link" data-translate="nav-projects" role="menuitem">Loyihalar</a>
+                        </li>
+                        <li class="nav-item" role="none">
+                            <a href="#contact" class="nav-link" data-translate="nav-contact" role="menuitem">Aloqa</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-controls">
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="language-btn" id="languageBtn" aria-label="Change language" aria-expanded="false">
+                            <span class="language-flag">🇺🇿</span>
+                            <span class="language-code">UZ</span>
+                            <svg class="dropdown-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="language-dropdown" id="languageDropdown" role="listbox">
+                            <button class="language-option active" data-lang="uz" role="option" aria-selected="true">
+                                <span class="flag">🇺🇿</span>
+                                <span>O'zbek</span>
+                            </button>
+                            <button class="language-option" data-lang="en" role="option">
+                                <span class="flag">🇺🇸</span>
+                                <span>English</span>
+                            </button>
+                            <button class="language-option" data-lang="ru" role="option">
+                                <span class="flag">🇷🇺</span>
+                                <span>Русский</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" role="switch" aria-checked="true">
+                        <div class="theme-toggle-track">
+                            <div class="theme-toggle-thumb">
+                                <svg class="sun-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                <svg class="moon-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title" id="hero-title">
+                            <span class="greeting" data-translate="hero-greeting">Salom, men</span>
+                            <span class="name-animated">Ozodbek Sobirov</span>
+                            <span class="age" data-translate="hero-age">15 yoshda</span>
+                        </h1>
+
+                        <div class="hero-subtitle">
+                            <span class="title-text" data-translate="hero-title-text">To'liq stack dasturchi</span>
+                            <span class="typing-cursor">|</span>
+                        </div>
+
+                        <p class="hero-description" data-translate="hero-description">
+                            2 yillik tajribaga ega dasturchi. Python, JavaScript, Java tillarida ishlayman. Telegram botlari, web ilovalar va xavfsizlik testlari bilan shug'ullanaman.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary" data-translate="hero-view-projects">
+                                Loyihalarimni ko'ring
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary" data-translate="hero-contact-me">
+                                Bog'laning
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                                    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="hero-image">
+                            <div class="image-placeholder">
+                                <svg class="avatar-icon" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                                    <circle cx="60" cy="60" r="60" fill="var(--primary-color)"/>
+                                    <circle cx="60" cy="45" r="20" fill="var(--bg-color)"/>
+                                    <path d="M30 90c0-16.569 13.431-30 30-30s30 13.431 30 30" fill="var(--bg-color)"/>
+                                </svg>
+                            </div>
+                            <div class="floating-elements">
+                                <div class="floating-element" style="--delay: 0s;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="floating-element" style="--delay: 1s;">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="floating-element" style="--delay: 2s;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                                        <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <span class="scroll-text" data-translate="hero-scroll">Pastga scroll qiling</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="experience-title" data-translate="experience-title">Tajriba</h2>
+                    <p class="section-subtitle" data-translate="experience-subtitle">2 yillik professional tajriba</p>
+                </div>
+
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-period">2022 - 2024</div>
+                            <h3 class="timeline-title" data-translate="experience-itpark-title">IT Park</h3>
+                            <p class="timeline-role" data-translate="experience-itpark-role">Python Backend Dasturchi</p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">SQLite</span>
+                                <span class="skill-tag">Telegram API</span>
+                                <span class="skill-tag">IOGRAM</span>
+                            </div>
+                            <p class="timeline-description" data-translate="experience-itpark-description">
+                                Telegram botlari va backend dasturlar ishlab chiqish. SQLite ma'lumotlar bazasi bilan ishlash.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-period">2023 - 2024</div>
+                            <h3 class="timeline-title" data-translate="experience-freelance-title">Freelance</h3>
+                            <p class="timeline-role" data-translate="experience-freelance-role">Full Stack Dasturchi</p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                            </div>
+                            <p class="timeline-description" data-translate="experience-freelance-description">
+                                Turli loyihalar uchun web ilovalar va dasturlar ishlab chiqish. 15+ ishlab chiqilgan loyiha.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="certificates" id="certificates" aria-labelledby="certificates-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="certificates-title" data-translate="certificates-title">Sertifikatlar</h2>
+                    <p class="section-subtitle" data-translate="certificates-subtitle">Professional yutuqlar va sertifikatlar</p>
+                </div>
+
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="certificate-title" data-translate="cert-itpark-title">IT Park Sertifikati</h3>
+                        <p class="certificate-description" data-translate="cert-itpark-desc">Python Backend Development kursi</p>
+                        <div class="certificate-date">2024</div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="certificate-title" data-translate="cert-security-title">Xavfsizlik Testlash</h3>
+                        <p class="certificate-description" data-translate="cert-security-desc">Ethical Hacking va Penetration Testing</p>
+                        <div class="certificate-date">2023</div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="certificate-title" data-translate="cert-web-title">Web Development</h3>
+                        <p class="certificate-description" data-translate="cert-web-desc">Modern Web Technologies</p>
+                        <div class="certificate-date">2023</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="projects-title" data-translate="projects-title">Loyihalar</h2>
+                    <p class="section-subtitle" data-translate="projects-subtitle">15+ ishlab chiqilgan loyiha</p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">ChannelControl</h3>
+                            <p class="project-description" data-translate="project-channel-desc">Telegram kanallarini boshqarish va moderatsiya qilish uchun bot. Xabarlarni tekshirish, spam filtrlash va avtomatik moderatsiya xizmatlari.</p>
+                            <div class="project-links">
+                                <a href="https://t.me/ChannelControl_bot" class="btn btn-primary" target="_blank" rel="noopener" aria-label="View bot">
+                                    <span data-translate="project-view">Ko'rish</span>
+                                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">ShutUpBot</h3>
+                            <p class="project-description" data-translate="project-shutdown-desc">Guruhlarda spam va noto'g'ri xabarlarni avtomatik ravishda to'xtatish uchun bot. Moderatlar uchun qulay boshqaruv paneli va real vaqtda filtrlash.</p>
+                            <div class="project-links">
+                                <a href="https://t.me/shutttUpbot" class="btn btn-primary" target="_blank" rel="noopener" aria-label="View bot">
+                                    <span data-translate="project-view">Ko'rish</span>
+                                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">TasksChat</h3>
+                            <p class="project-description" data-translate="project-tasks-desc">Jamoa ishi va vazifalar boshqarish uchun bot. Vazifalar yaratish, taqsimlash va kuzatish. Jamoaviy loyihalar uchun ideal yechim.</p>
+                            <div class="project-links">
+                                <a href="https://t.me/Taskschat_bot" class="btn btn-primary" target="_blank" rel="noopener" aria-label="View bot">
+                                    <span data-translate="project-view">Ko'rish</span>
+                                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3 class="project-title">FileManager</h3>
+                            <p class="project-description" data-translate="project-file-desc">Fayllarni yuklash, saqlash va boshqarish uchun bot. Cloud storage, fayl turlarini qo'llab-quvvatlash va xavfsiz saqlash xizmatlari.</p>
+                            <div class="project-links">
+                                <a href="https://t.me/Filebottt_bot" class="btn btn-primary" target="_blank" rel="noopener" aria-label="View bot">
+                                    <span data-translate="project-view">Ko'rish</span>
+                                    <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="contact-title" data-translate="contact-title">Aloqa</h2>
+                    <p class="section-subtitle" data-translate="contact-subtitle">Men bilan bog'laning</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                                    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3 data-translate="contact-email">Email</h3>
+                                <a href="mailto:ozodbek117s@example.com">ozodbek117s@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3 data-translate="contact-phone">Telefon</h3>
+                                <a href="tel:+998995613682">+998 99 561 36 82</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3 data-translate="contact-telegram">Telegram</h3>
+                                <a href="https://t.me/hostman7" target="_blank" rel="noopener">@hostman7</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3 data-translate="contact-github">GitHub</h3>
+                                <a href="https://github.com/ozodbeks0701" target="_blank" rel="noopener">ozodbeks0701</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <label for="name" data-translate="form-name">Ism</label>
+                                <input type="text" id="name" name="name" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" data-translate="form-subject">Mavzu</label>
+                                <input type="text" id="subject" name="subject" required aria-required="true">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" data-translate="form-message">Xabar</label>
+                                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" data-translate="form-send">
+                                Xabarni yuborish
+                                <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2"/>
+                                    <polygon points="22,2 15,22 11,13 2,9" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Ozodbek Sobirov. <span data-translate="footer-rights">Barcha huquqlar himoyalangan.</span></p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://t.me/hostman7" target="_blank" rel="noopener" aria-label="Telegram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/ozodbeks0701" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
