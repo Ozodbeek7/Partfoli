@@ -966,6 +966,7 @@ a:hover {
     font-size: 1rem;
 }
 
+
 /* ===== LANGUAGES SECTION ===== */
 
 .languages {
@@ -1005,9 +1006,16 @@ a:hover {
     box-shadow: 0 15px 35px var(--shadow-lg);
 }
 
-.language-flag {
-    font-size: 3rem;
-    margin-bottom: var(--space-md);
+.language-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-md);
+    color: white;
 }
 
 .language-name {
@@ -1038,6 +1046,7 @@ a:hover {
     transition: width 1s ease;
 }
 
+
 /* ===== PROJECTS SECTION ===== */
 
 .projects {
@@ -1057,10 +1066,8 @@ a:hover {
     border: 1px solid var(--border-color);
     transition: all var(--transition-normal);
     box-shadow: 0 10px 30px var(--shadow);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 180px;
+    overflow: hidden;
+    position: relative;
 }
 
 .project-card:hover {
@@ -1068,10 +1075,65 @@ a:hover {
     box-shadow: 0 15px 35px var(--shadow-lg);
 }
 
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-lg);
+    background: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.project-status {
+    display: flex;
+    align-items: center;
+}
+
+.status-badge {
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.active {
+    background: rgba(34, 197, 94, 0.1);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
 .project-content {
     padding: var(--space-lg);
-    text-align: center;
-    width: 100%;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-md);
+}
+
+.tech-tag {
+    background: var(--surface-color);
+    color: var(--text-primary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
 }
 
 .project-title {
