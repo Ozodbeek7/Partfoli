@@ -58,7 +58,7 @@ const translations = {
         'lang-russian': 'Rus tili',
         'lang-russian-level': '(Basic)',
         'projects-title': 'Loyihalar',
-        'projects-subtitle': '15+ ishlab chiqilgan loyiha',
+        'projects-subtitle': '10+ ishlab chiqilgan loyiha',
         'project-channel-desc': 'Telegram kanallarini boshqarish va moderatsiya qilish uchun bot. Xabarlarni tekshirish, spam filtrlash va avtomatik moderatsiya xizmatlari.',
         'project-shutdown-desc': 'Guruhlarda spam va noto\'g\'ri xabarlarni avtomatik ravishda to\'xtatish uchun bot. Moderatlar uchun qulay boshqaruv paneli va real vaqtda filtrlash.',
         'project-tasks-desc': 'Jamoa ishi va vazifalar boshqarish uchun bot. Vazifalar yaratish, taqsimlash va kuzatish. Jamoaviy loyihalar uchun ideal yechim.',
