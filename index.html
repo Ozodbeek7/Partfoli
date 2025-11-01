@@ -340,16 +340,27 @@
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="certificate-card">
-                <h3 class="certificate-title" data-translate="cert-cert1-title">Sertifikat 1</h3>
-                <p class="certificate-description" data-translate="cert-cert1-desc">Professional sertifikat</p>
-                <div class="certificate-date">
-                    <a href="https://drive.google.com/file/d/1B7APqa5zGJvLHotTKGZyqkvoExJbKOYh/view?usp=sharing" target="_blank" rel="noopener" class="certificate-link" data-translate="cert-view">Ko'rish</a>
-                </div>
-            </div>
-            <div class="certificate-card">
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2"/>
+                                <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/>
+                                <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="certificate-title" data-translate="cert-cert1-title">Sertifikat 1</h3>
+                        <p class="certificate-description" data-translate="cert-cert1-desc">Professional sertifikat</p>
+                        <div class="certificate-actions">
+                            <a href="https://drive.google.com/file/d/1B7APqa5zGJvLHotTKGZyqkvoExJbKOYh/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary" aria-label="Open Certificate 1">
+                                <span data-translate="project-view">Ko'rish</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
                         <div class="certificate-icon">
                             <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
@@ -361,8 +372,10 @@
                         </div>
                         <h3 class="certificate-title" data-translate="cert-cert2-title">Sertifikat 2</h3>
                         <p class="certificate-description" data-translate="cert-cert2-desc">Professional sertifikat</p>
-                        <div class="certificate-date">
-                            <a href="https://drive.google.com/file/d/1cNP6_A39iAGcg_qsmPh0gnauoDTWAYWT/view?usp=sharing" target="_blank" rel="noopener" class="certificate-link" data-translate="cert-view">Ko'rish</a>
+                        <div class="certificate-actions">
+                            <a href="https://drive.google.com/file/d/1cNP6_A39iAGcg_qsmPh0gnauoDTWAYWT/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary" aria-label="Open Certificate 2">
+                                <span data-translate="project-view">Ko'rish</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -481,7 +494,7 @@
                                 <span class="tech-tag">SQLite</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://t.me/@ChannelCantrol_bot" class="btn btn-primary" target="_blank" rel="noopener" aria-label="View bot">
+                                <a href="https://t.me/ChannelControl_bot." class="btn btn-primary" target="_blank" rel="noopener" aria-label="View bot">
                                     <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
                                         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="currentColor" stroke-width="2"/>
                                         <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="currentColor" stroke-width="2"/>
@@ -585,19 +598,35 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="project-card">
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="9" r="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M10 13h4" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge active">Faol</span>
+                            </div>
+                        </div>
                         <div class="project-content">
-                            <h3 class="project-title">School4Health</h3>
+                            <h3 class="project-title">School4Health Bot</h3>
                             <p class="project-description" data-translate="project-health-desc">Maktab o'quvchilari uchun sog'liqni nazorat qilib boruvchi bot. Sog'liq holatini kuzatish, yozib borish va monitoring qilish imkoniyatlari.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Health Monitoring</span>
+                                <span class="tech-tag">Telegram API</span>
+                            </div>
                             <div class="project-links">
                                 <a href="https://t.me/school4healthbot" class="btn btn-primary" target="_blank" rel="noopener" aria-label="View bot">
-                                    <span data-translate="project-view">Ko'rish</span>
                                     <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
                                         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="currentColor" stroke-width="2"/>
                                         <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="currentColor" stroke-width="2"/>
                                     </svg>
+                                    <span data-translate="project-view">Ko'rish</span>
                                 </a>
                             </div>
                         </div>
@@ -650,7 +679,7 @@
                             </div>
                             <div class="contact-details">
                                 <h3 data-translate="contact-telegram">Telegram</h3>
-                                <a href="https://t.me/ozodbeek_7 target="_blank" rel="noopener">@ozodbeek_7</a>
+                                <a href="https://t.me/ozodbeek_7" target="_blank" rel="noopener">@ozodbeek_7</a>
                             </div>
                         </div>
 
@@ -696,7 +725,7 @@
                 </div>
             </div>
         </section>
-    </main>
+    </main> 
 
     <!-- Footer -->
     <footer class="footer">
