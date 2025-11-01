@@ -21,7 +21,7 @@ const translations = {
         'nav-contact': 'Aloqa',
         'hero-greeting': 'Salom, men',
         'hero-age': '15 yoshda',
-        'hero-title-text': 'To\'liq stack dasturchi',
+        'hero-title-text': 'Full stack dasturchi',
         'hero-description': 'IT Park talabasi va maktab o\'quvchisi. Python, HTML, CSS, Web Design va Backend yo\'nalishlarida ishlayman. Ustozim Nodir Odilov rahbarligida dasturlashni o\'rganaman.',
         'hero-view-projects': 'Loyihalarimni ko\'ring',
         'hero-contact-me': 'Bog\'laning',
@@ -580,7 +580,7 @@ function handleContactFormSubmit(e) {
 
     // Create mailto link
     const emailBody = `Name: ${name}\n\nSubject: ${subject}\n\nMessage:\n${message}`;
-    const mailtoLink = `mailto:ozodbeks165@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:1ozodbek701@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
 
     // Open email client
     window.location.href = mailtoLink;
