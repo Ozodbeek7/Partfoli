@@ -10,239 +10,212 @@ let currentTheme = 'dark';
 
 // ===== TRANSLATIONS =====
 const translations = {
-    uz: {
-        'title': 'Ozodbek Sobirov - Full Stack Dasturchi',
-        'nav-home': 'Bosh sahifa',
-        'nav-experience': 'Tajriba',
-        'nav-certificates': 'Sertifikatlar',
-        'nav-mentor': 'Ustozim',
-        'nav-languages': 'Tillar',
-        'nav-projects': 'Loyihalar',
-        'nav-contact': 'Aloqa',
-        'hero-greeting': 'Salom, men',
-        'hero-age': '15 yoshda',
-        'hero-title-text': 'Full stack dasturchi',
-        'hero-description': 'IT Park talabasi va maktab o\'quvchisi. Python, HTML, CSS, Web Design va Backend yo\'nalishlarida ishlayman. Ustozim Nodir Odilov rahbarligida dasturlashni o\'rganaman.',
-        'hero-view-projects': 'Loyihalarimni ko\'ring',
-        'hero-contact-me': 'Bog\'laning',
-        'hero-scroll': 'Pastga aylantiring',
-        'experience-title': 'Tajriba',
-        'experience-subtitle': 'IT Park talabasi va maktab o\'quvchisi',
-        'experience-itpark-title': 'IT Park',
-        'experience-itpark-role': 'Talaba',
-        'experience-itpark-description': 'IT Park da dasturlashni o\'rganaman. Ustozim Nodir Odilov rahbarligida Python, Web Design va Backend yo\'nalishlarida ishlayman.',
-        'experience-freelance-title': 'Maktab',
-        'experience-freelance-role': 'O\'quvchi',
-        'experience-freelance-description': 'Maktab o\'quvchisi sifatida umumiy ta\'lim olib bormoqdaman. IT Park bilan bir vaqtda ta\'lim olishni davom ettiraman.',
-        'certificates-title': 'Sertifikatlar',
-        'certificates-subtitle': 'Professional yutuqlar va sertifikatlar',
-        'cert-english-title': 'English (IT) — Study',
-        'cert-english-desc': 'Ingliz tili (IT yo\'nalishi) sertifikati',
-        'cert-ecommerce-title': 'Elektron Tijorat',
-        'cert-ecommerce-desc': 'E-commerce bo\'yicha sertifikat',
-        'cert-smm-title': 'SMM — Social Media Marketing',
-        'cert-smm-desc': 'Video o\'quv kursi sertifikati',
-        'cert-webdesign-title': 'Web Design',
-        'cert-webdesign-desc': 'Web dizayn bo\'yicha sertifikat',
-        'mentor-title': 'Ustozim',
-        'mentor-subtitle': 'Mening dasturlash yo\'lida rahnamom',
-        'mentor-name': 'Nodir Odilov',
-        'mentor-role': 'IT Park O\'qituvchisi',
-        'mentor-description': 'Meni dasturlash yo\'lida rahnamolik qilayotgan ustozim. Python, Web Design va Backend yo\'nalishlarida bilim beradi.',
-        'languages-title': 'Tillar',
-        'languages-subtitle': 'Men biladigan tillar',
-        'lang-uzbek': 'O\'zbek tili',
-        'lang-uzbek-level': '(Native)',
-        'lang-english': 'Ingliz tili',
-        'lang-english-level': '(Advanced)',
-        'lang-russian': 'Rus tili',
-        'lang-russian-level': '(Basic)',
-        'projects-title': 'Loyihalar',
-        'projects-subtitle': '10+ ishlab chiqilgan loyiha',
-        'project-channel-desc': 'Telegram kanallarini boshqarish va moderatsiya qilish uchun bot. Xabarlarni tekshirish, spam filtrlash va avtomatik moderatsiya xizmatlari.',
-        'project-shutdown-desc': 'Guruhlarda spam va noto\'g\'ri xabarlarni avtomatik ravishda to\'xtatish uchun bot. Moderatlar uchun qulay boshqaruv paneli va real vaqtda filtrlash.',
-        'project-tasks-desc': 'Jamoa ishi va vazifalar boshqarish uchun bot. Vazifalar yaratish, taqsimlash va kuzatish. Jamoaviy loyihalar uchun ideal yechim.',
-        'project-file-desc': 'Fayllarni yuklash, saqlash va boshqarish uchun bot. Cloud storage, fayl turlarini qo\'llab-quvvatlash va xavfsiz saqlash xizmatlari.',
-        'project-health-desc': 'O\'quvchilarning salomatligini nazorat qilish uchun bot. Salomatlik holatini kuzatish, yozuvlar olib borish va monitoring qilish.',
-        'project-view': 'Ko\'rish',
-        'contact-title': 'Aloqa',
-        'contact-subtitle': 'Men bilan bog\'laning',
-        'contact-email': 'Email',
-        'contact-phone': 'Telefon',
-        'contact-telegram': 'Telegram',
-        'contact-github': 'GitHub',
-        'form-name': 'Ism',
-        'form-subject': 'Mavzu',
-        'form-message': 'Xabar',
-        'form-send': 'Xabarni yuborish',
-        'footer-rights': 'Barcha huquqlar himoyalangan.'
-    },
-    en: {
-        'title': 'Ozodbek Sobirov - Full Stack Developer',
-        'nav-home': 'Home',
-        'nav-experience': 'Experience',
-        'nav-certificates': 'Certificates',
-        'nav-mentor': 'Mentor',
-        'nav-languages': 'Languages',
-        'nav-projects': 'Projects',
-        'nav-contact': 'Contact',
-        'hero-greeting': 'Hello, I am',
-        'hero-age': '15 years old',
-        'hero-title-text': 'Full Stack Developer',
-        'hero-description': 'IT Park student and school student. I work in Python, HTML, CSS, Web Design and Backend directions. I learn programming under the guidance of my mentor Nodir Odilov.',
-        'hero-view-projects': 'View my projects',
-        'hero-contact-me': 'Contact me',
-        'hero-scroll': 'Scroll down',
-        'experience-title': 'Experience',
-        'experience-subtitle': 'IT Park student and school student',
-        'experience-itpark-title': 'IT Park',
-        'experience-itpark-role': 'Student',
-        'experience-itpark-description': 'Learning programming at IT Park. Working in Python, Web Design and Backend directions under the guidance of my mentor Nodir Odilov.',
-        'experience-freelance-title': 'School',
-        'experience-freelance-role': 'Student',
-        'experience-freelance-description': 'Continuing general education as a school student. Simultaneously studying at IT Park.',
-        'certificates-title': 'Certificates',
-        'certificates-subtitle': 'Professional achievements and certificates',
-        'cert-english-title': 'English (IT) — Study',
-        'cert-english-desc': 'English for IT certificate',
-        'cert-ecommerce-title': 'E-commerce',
-        'cert-ecommerce-desc': 'E-commerce certificate',
-        'cert-smm-title': 'SMM — Social Media Marketing',
-        'cert-smm-desc': 'Video course certificate',
-        'cert-webdesign-title': 'Web Design',
-        'cert-webdesign-desc': 'Web design certificate',
-        'mentor-title': 'My Mentor',
-        'mentor-subtitle': 'My guide in programming',
-        'mentor-name': 'Nodir Odilov',
-        'mentor-role': 'IT Park Teacher',
-        'mentor-description': 'My mentor who guides me in programming. Teaches Python, Web Design and Backend directions.',
-        'languages-title': 'Languages',
-        'languages-subtitle': 'Languages I know',
-        'lang-uzbek': 'Uzbek',
-        'lang-uzbek-level': '(Native)',
-        'lang-english': 'English',
-        'lang-english-level': '(Advanced)',
-        'lang-russian': 'Russian',
-        'lang-russian-level': '(Basic)',
-        'projects-title': 'Projects',
-        'projects-subtitle': '15+ developed projects',
-        'project-channel-desc': 'Bot for managing and moderating Telegram channels. Message checks, spam filtering, and automated moderation services.',
-        'project-shutdown-desc': 'Bot that automatically stops spam and inappropriate messages in groups. Handy admin panel and real-time filtering for moderators.',
-        'project-tasks-desc': 'Team collaboration and task management bot. Create, assign, and track tasks—ideal for team projects.',
-        'project-file-desc': 'Bot for uploading, storing, and managing files. Cloud storage, multiple file types, and secure storage features.',
-        'project-health-desc': 'Health monitoring bot for school students. Track health status, record and monitor health conditions.',
-        'project-view': 'View',
-        'contact-title': 'Contact',
-        'contact-subtitle': 'Get in touch with me',
-        'contact-email': 'Email',
-        'contact-phone': 'Phone',
-        'contact-telegram': 'Telegram',
-        'contact-github': 'GitHub',
-        'form-name': 'Name',
-        'form-subject': 'Subject',
-        'form-message': 'Message',
-        'form-send': 'Send message',
-        'footer-rights': 'All rights reserved.'
-    },
-    ru: {
-        'title': 'Озодбек Собиров — Full Stack Разработчик',
-        'nav-home': 'Главная',
-        'nav-experience': 'Опыт',
-        'nav-certificates': 'Сертификаты',
-        'nav-mentor': 'Наставник',
-        'nav-languages': 'Языки',
-        'nav-projects': 'Проекты',
-        'nav-contact': 'Контакты',
-        'hero-greeting': 'Привет, я',
-        'hero-age': '15 лет',
-        'hero-title-text': 'Full Stack разработчик',
-        'hero-description': 'Студент IT Park и школьник. Работаю в направлениях Python, HTML, CSS, Web Design и Backend. Изучаю программирование под руководством моего наставника Нодира Одилова.',
-        'hero-view-projects': 'Посмотреть мои проекты',
-        'hero-contact-me': 'Связаться со мной',
-        'hero-scroll': 'Прокрутите вниз',
-        'experience-title': 'Опыт',
-        'experience-subtitle': 'Студент IT Park и школьник',
-        'experience-itpark-title': 'IT Park',
-        'experience-itpark-role': 'Студент',
-        'experience-itpark-description': 'Изучаю программирование в IT Park. Работаю в направлениях Python, Web Design и Backend под руководством моего наставника Нодира Одилова.',
-        'experience-freelance-title': 'Школа',
-        'experience-freelance-role': 'Ученик',
-        'experience-freelance-description': 'Продолжаю общее образование как школьник. Одновременно учусь в IT Park.',
-        'certificates-title': 'Сертификаты',
-        'certificates-subtitle': 'Профессиональные достижения и сертификаты',
-        'cert-english-title': 'Английский (IT) — Study',
-        'cert-english-desc': 'Сертификат по английскому для IT',
-        'cert-ecommerce-title': 'Электронная коммерция',
-        'cert-ecommerce-desc': 'Сертификат по e-commerce',
-        'cert-smm-title': 'SMM — Social Media Marketing',
-        'cert-smm-desc': 'Сертификат видеокурса',
-        'cert-webdesign-title': 'Web Design',
-        'cert-webdesign-desc': 'Сертификат по веб‑дизайну',
-        'mentor-title': 'Мой наставник',
-        'mentor-subtitle': 'Мой проводник в программировании',
-        'mentor-name': 'Нодир Одилов',
-        'mentor-role': 'Преподаватель IT Park',
-        'mentor-description': 'Мой наставник, который направляет меня в программировании. Обучает направлениям Python, Web Design и Backend.',
-        'languages-title': 'Языки',
-        'languages-subtitle': 'Языки, которые я знаю',
-        'lang-uzbek': 'Узбекский',
-        'lang-uzbek-level': '(Native)',
-        'lang-english': 'Английский',
-        'lang-english-level': '(Advanced)',
-        'lang-russian': 'Русский',
-        'lang-russian-level': '(Basic)',
-        'projects-title': 'Проекты',
-        'projects-subtitle': '15+ разработанных проектов',
-        'project-channel-desc': 'Бот для управления и модерации Telegram‑каналов. Проверка сообщений, фильтрация спама и автоматическая модерация.',
-        'project-shutdown-desc': 'Бот, который автоматически останавливает спам и неподходящие сообщения в группах. Удобная панель и фильтрация в реальном времени для модераторов.',
-        'project-tasks-desc': 'Бот для командной работы и управления задачами. Создание, назначение и отслеживание задач — идеален для командных проектов.',
-        'project-file-desc': 'Бот для загрузки, хранения и управления файлами. Облако, поддержка разных форматов и безопасное хранение.',
-        'project-health-desc': 'Бот для контроля здоровья школьников. Отслеживание состояния здоровья, ведение записей и мониторинг.',
-        'project-view': 'Посмотреть',
-        'contact-title': 'Контакты',
-        'contact-subtitle': 'Свяжитесь со мной',
-        'contact-email': 'Email',
-        'contact-phone': 'Телефон',
-        'contact-telegram': 'Telegram',
-        'contact-github': 'GitHub',
-        'form-name': 'Имя',
-        'form-subject': 'Тема',
-        'form-message': 'Сообщение',
-        'form-send': 'Отправить сообщение',
-        'footer-rights': 'Все права защищены.'
-    }
+  uz: {
+    'title': 'Ozodbek Sobirov - Full Stack Dasturchi',
+    'nav-home': 'Bosh sahifa',
+    'nav-experience': 'Tajriba',
+    'nav-certificates': 'Sertifikatlar',
+    'nav-projects': 'Loyihalar',
+    'nav-contact': 'Aloqa',
+    'hero-greeting': 'Salom, men',
+    'hero-age': '15 yoshda',
+    'hero-title-text': 'Full stack dasturchi',
+    'hero-description': '2 yillik tajribaga ega dasturchi. Python, JavaScript, Java tillarida ishlayman. Telegram botlari, web ilovalar va xavfsizlik testlari bilan shug\'ullanaman.',
+    'hero-view-projects': 'Loyihalarimni ko\'ring',
+    'hero-contact-me': 'Bog\'laning',
+    'hero-scroll': 'Pastga scroll qiling',
+    'experience-title': 'Tajriba',
+    'experience-subtitle': '2 yillik professional tajriba',
+    'experience-itpark-title': 'IT Park',
+    'experience-itpark-role': 'Python Backend Dasturchi',
+    'experience-itpark-description': 'Telegram botlari va backend dasturlar ishlab chiqish. SQLite ma\'lumotlar bazasi bilan ishlash.',
+    'experience-freelance-title': 'Freelance',
+    'experience-freelance-role': 'Full Stack Dasturchi',
+    'experience-freelance-description': 'Turli loyihalar uchun web ilovalar va dasturlar ishlab chiqish. 15+ ishlab chiqilgan loyiha.',
+    'certificates-title': 'Sertifikatlar',
+    'certificates-subtitle': 'Professional yutuqlar va sertifikatlar',
+    'cert-itpark-title': 'IT Park Sertifikati',
+    'cert-itpark-desc': 'Python Backend Development kursi',
+    'cert-security-title': 'Xavfsizlik Testlash',
+    'cert-security-desc': 'Ethical Hacking va Penetration Testing',
+    'cert-web-title': 'Web Development',
+    'cert-web-desc': 'Modern Web Technologies',
+    'cert-meta-title': 'Meta Backend Developer',
+    'cert-meta-desc': 'Professional sertifikat - Backend Development',
+    'cert-problem-solving-title': 'Problem Solving',
+    'cert-problem-solving-desc': 'Muammolarni yechish bo\'yicha sertifikat',
+    'cert-sql-title': 'SQL',
+    'cert-sql-desc': 'SQL ma\'lumotlar bazasi bo\'yicha sertifikat',
+    'cert-view': 'Ko\'rish',
+    'projects-title': 'Loyihalar',
+    'projects-subtitle': '15+ ishlab chiqilgan loyiha',
+    'project-channel-desc': 'Telegram kanal boshqaruv boti. Xabarlarni tekshirish va moderatsiya qilish.',
+    'project-shutdown-desc': 'Guruhlarda spam va noto\'g\'ri xabarlarni to\'xtatish uchun bot.',
+    'project-tasks-desc': 'Vazifalar boshqarish va jamoaviy ish uchun bot.',
+    'project-file-desc': 'Fayllarni yuklash, saqlash va boshqarish uchun bot.',
+    'project-health-desc': 'Maktab o\'quvchilari uchun sog\'liqni nazorat qilib boruvchi bot. Sog\'liq holatini kuzatish, yozib borish va monitoring qilish imkoniyatlari.',
+    'project-food-desc': 'Ovqat buyurtma qilish va yetkazib berish xizmatlari uchun bot. Restoran menyusini ko\'rish, buyurtma berish va kuzatish imkoniyatlari.',
+    'project-view': 'Ko\'rish',
+    'contact-title': 'Aloqa',
+    'contact-subtitle': 'Men bilan bog\'laning',
+    'contact-email': 'Email',
+    'contact-phone': 'Telefon',
+    'contact-telegram': 'Telegram',
+    'contact-github': 'GitHub',
+    'form-name': 'Ism',
+    'form-subject': 'Mavzu',
+    'form-message': 'Xabar',
+    'form-send': 'Xabarni yuborish',
+    'footer-rights': 'Barcha huquqlar himoyalangan.'
+  },
+  en: {
+    'title': 'Ozodbek Sobirov - Full Stack Developer',
+    'nav-home': 'Home',
+    'nav-experience': 'Experience',
+    'nav-certificates': 'Certificates',
+    'nav-projects': 'Projects',
+    'nav-contact': 'Contact',
+    'hero-greeting': 'Hello, I am',
+    'hero-age': '15 years old',
+    'hero-title-text': 'Full Stack Developer',
+    'hero-description': 'Developer with 2 years of experience. I work with Python, JavaScript, Java. I deal with Telegram bots, web applications and security testing.',
+    'hero-view-projects': 'View my projects',
+    'hero-contact-me': 'Contact me',
+    'hero-scroll': 'Scroll down',
+    'experience-title': 'Experience',
+    'experience-subtitle': '2 years of professional experience',
+    'experience-itpark-title': 'IT Park',
+    'experience-itpark-role': 'Python Backend Developer',
+    'experience-itpark-description': 'Development of Telegram bots and backend programs. Working with SQLite database.',
+    'experience-freelance-title': 'Freelance',
+    'experience-freelance-role': 'Full Stack Developer',
+    'experience-freelance-description': 'Development of web applications and programs for various projects. 15+ developed projects.',
+    'certificates-title': 'Certificates',
+    'certificates-subtitle': 'Professional achievements and certificates',
+    'cert-itpark-title': 'IT Park Certificate',
+    'cert-itpark-desc': 'Python Backend Development course',
+    'cert-security-title': 'Security Testing',
+    'cert-security-desc': 'Ethical Hacking and Penetration Testing',
+    'cert-web-title': 'Web Development',
+    'cert-web-desc': 'Modern Web Technologies',
+    'cert-meta-title': 'Meta Backend Developer',
+    'cert-meta-desc': 'Professional certificate - Backend Development',
+    'cert-problem-solving-title': 'Problem Solving',
+    'cert-problem-solving-desc': 'Problem solving certificate',
+    'cert-sql-title': 'SQL',
+    'cert-sql-desc': 'SQL database certificate',
+    'cert-view': 'View',
+    'projects-title': 'Projects',
+    'projects-subtitle': '15+ developed projects',
+    'project-channel-desc': 'Telegram channel management bot. Message checking and moderation.',
+    'project-shutdown-desc': 'Bot to stop spam and inappropriate messages in groups.',
+    'project-tasks-desc': 'Task management and team work bot.',
+    'project-file-desc': 'Bot for uploading, storing and managing files.',
+    'project-health-desc': 'Health monitoring bot for school students. Track health status, record and monitor health conditions.',
+    'project-food-desc': 'Food ordering and delivery service bot. View restaurant menu, place orders and track deliveries.',
+    'project-view': 'View',
+    'contact-title': 'Contact',
+    'contact-subtitle': 'Get in touch with me',
+    'contact-email': 'Email',
+    'contact-phone': 'Phone',
+    'contact-telegram': 'Telegram',
+    'contact-github': 'GitHub',
+    'form-name': 'Name',
+    'form-subject': 'Subject',
+    'form-message': 'Message',
+    'form-send': 'Send message',
+    'footer-rights': 'All rights reserved.'
+  },
+  ru: {
+    'title': 'Озодбек Собиров - Full Stack Разработчик',
+    'nav-home': 'Главная',
+    'nav-experience': 'Опыт',
+    'nav-certificates': 'Сертификаты',
+    'nav-projects': 'Проекты',
+    'nav-contact': 'Контакты',
+    'hero-greeting': 'Привет, я',
+    'hero-age': '15 лет',
+    'hero-title-text': 'Full Stack Разработчик',
+    'hero-description': 'Разработчик с 2-летним опытом. Работаю с Python, JavaScript, Java. Занимаюсь Telegram ботами, веб-приложениями и тестированием безопасности.',
+    'hero-view-projects': 'Посмотреть мои проекты',
+    'hero-contact-me': 'Связаться со мной',
+    'hero-scroll': 'Прокрутите вниз',
+    'experience-title': 'Опыт',
+    'experience-subtitle': '2 года профессионального опыта',
+    'experience-itpark-title': 'IT Park',
+    'experience-itpark-role': 'Python Backend Разработчик',
+    'experience-itpark-description': 'Разработка Telegram ботов и backend программ. Работа с базой данных SQLite.',
+    'experience-freelance-title': 'Фриланс',
+    'experience-freelance-role': 'Full Stack Разработчик',
+    'experience-freelance-description': 'Разработка веб-приложений и программ для различных проектов. 15+ разработанных проектов.',
+    'certificates-title': 'Сертификаты',
+    'certificates-subtitle': 'Профессиональные достижения и сертификаты',
+    'cert-itpark-title': 'Сертификат IT Park',
+    'cert-itpark-desc': 'Курс Python Backend Development',
+    'cert-security-title': 'Тестирование Безопасности',
+    'cert-security-desc': 'Этический хакинг и тестирование на проникновение',
+    'cert-web-title': 'Веб-разработка',
+    'cert-web-desc': 'Современные веб-технологии',
+    'cert-meta-title': 'Meta Backend Developer',
+    'cert-meta-desc': 'Профессиональный сертификат - Backend Development',
+    'cert-problem-solving-title': 'Решение Проблем',
+    'cert-problem-solving-desc': 'Сертификат по решению проблем',
+    'cert-sql-title': 'SQL',
+    'cert-sql-desc': 'Сертификат по базам данных SQL',
+    'cert-view': 'Посмотреть',
+    'projects-title': 'Проекты',
+    'projects-subtitle': '15+ разработанных проектов',
+    'project-channel-desc': 'Telegram бот для управления каналами. Проверка сообщений и модерация.',
+    'project-shutdown-desc': 'Бот для остановки спама и неподходящих сообщений в группах.',
+    'project-tasks-desc': 'Бот для управления задачами и командной работы.',
+    'project-file-desc': 'Бот для загрузки, хранения и управления файлами.',
+    'project-health-desc': 'Бот для контроля здоровья школьников. Отслеживание состояния здоровья, ведение записей и мониторинг.',
+    'project-food-desc': 'Бот для заказа еды и доставки. Просмотр меню ресторана, размещение заказов и отслеживание доставки.',
+    'project-view': 'Посмотреть',
+    'contact-title': 'Контакты',
+    'contact-subtitle': 'Свяжитесь со мной',
+    'contact-email': 'Email',
+    'contact-phone': 'Телефон',
+    'contact-telegram': 'Telegram',
+    'contact-github': 'GitHub',
+    'form-name': 'Имя',
+    'form-subject': 'Тема',
+    'form-message': 'Сообщение',
+    'form-send': 'Отправить сообщение',
+    'footer-rights': 'Все права защищены.'
+  }
 };
 
 // ===== DOM ELEMENTS =====
 const elements = {
-    cursor: document.getElementById('cursor'),
-    cursorTrail: document.getElementById('cursorTrail'),
-    themeToggle: document.getElementById('themeToggle'),
-    languageBtn: document.getElementById('languageBtn'),
-    languageDropdown: document.getElementById('languageDropdown'),
-    mobileMenuToggle: document.getElementById('mobileMenuToggle'),
-    navMenu: document.getElementById('navMenu'),
-    header: document.getElementById('header'),
-    contactForm: document.getElementById('contactForm')
+  cursor: document.getElementById('cursor'),
+  cursorTrail: document.getElementById('cursorTrail'),
+  themeToggle: document.getElementById('themeToggle'),
+  languageBtn: document.getElementById('languageBtn'),
+  languageDropdown: document.getElementById('languageDropdown'),
+  mobileMenuToggle: document.getElementById('mobileMenuToggle'),
+  navMenu: document.getElementById('navMenu'),
+  header: document.getElementById('header'),
+  contactForm: document.getElementById('contactForm')
 };
 
 // ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', function() {
-    initializeApp();
+  initializeApp();
 });
 
 function initializeApp() {
-    loadUserPreferences();
-    // initializeCustomCursor(); // Disabled for better usability
-    initializeThemeToggle();
-    initializeLanguageSwitcher();
-    initializeMobileMenu();
-    initializeSmoothScrolling();
-    initializeScrollAnimations();
-    initializeContactForm();
-    initializeTypingAnimation();
-    updateLanguage(currentLanguage);
-    updateTheme(currentTheme);
+  loadUserPreferences();
+  // initializeCustomCursor(); // Disabled for better usability
+  initializeThemeToggle();
+  initializeLanguageSwitcher();
+  initializeMobileMenu();
+  initializeSmoothScrolling();
+  initializeScrollAnimations();
+  initializeContactForm();
+  initializeTypingAnimation();
+  updateLanguage(currentLanguage);
+  updateTheme(currentTheme);
 }
 
 // ===== CUSTOM CURSOR - DISABLED =====
@@ -335,453 +308,453 @@ function initializeCustomCursor() {
 
 // ===== THEME TOGGLE =====
 function initializeThemeToggle() {
-    elements.themeToggle.addEventListener('click', toggleTheme);
+  elements.themeToggle.addEventListener('click', toggleTheme);
 }
 
 function toggleTheme() {
-    currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    updateTheme(currentTheme);
-    saveUserPreferences();
+  currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  updateTheme(currentTheme);
+  saveUserPreferences();
 }
 
 function updateTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    elements.themeToggle.setAttribute('aria-checked', theme === 'dark');
-
-    // Update theme toggle icons
-    const sunIcon = elements.themeToggle.querySelector('.sun-icon');
-    const moonIcon = elements.themeToggle.querySelector('.moon-icon');
-
-    if (theme === 'dark') {
-        sunIcon.style.opacity = '0';
-        moonIcon.style.opacity = '1';
-    } else {
-        sunIcon.style.opacity = '1';
-        moonIcon.style.opacity = '0';
-    }
+  document.documentElement.setAttribute('data-theme', theme);
+  elements.themeToggle.setAttribute('aria-checked', theme === 'dark');
+  
+  // Update theme toggle icons
+  const sunIcon = elements.themeToggle.querySelector('.sun-icon');
+  const moonIcon = elements.themeToggle.querySelector('.moon-icon');
+  
+  if (theme === 'dark') {
+    sunIcon.style.opacity = '0';
+    moonIcon.style.opacity = '1';
+  } else {
+    sunIcon.style.opacity = '1';
+    moonIcon.style.opacity = '0';
+  }
 }
 
 // ===== LANGUAGE SWITCHER =====
 function initializeLanguageSwitcher() {
-    elements.languageBtn.addEventListener('click', toggleLanguageDropdown);
+  elements.languageBtn.addEventListener('click', toggleLanguageDropdown);
+  
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.language-selector')) {
+      closeLanguageDropdown();
+    }
+  });
 
-    // Close dropdown when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.language-selector')) {
-            closeLanguageDropdown();
-        }
+  // Language option clicks
+  document.querySelectorAll('.language-option').forEach(option => {
+    option.addEventListener('click', (e) => {
+      const lang = e.currentTarget.dataset.lang;
+      switchLanguage(lang);
+      closeLanguageDropdown();
     });
-
-    // Language option clicks
-    document.querySelectorAll('.language-option').forEach(option => {
-        option.addEventListener('click', (e) => {
-            const lang = e.currentTarget.dataset.lang;
-            switchLanguage(lang);
-            closeLanguageDropdown();
-        });
-    });
+  });
 }
 
 function toggleLanguageDropdown() {
-    const isOpen = elements.languageDropdown.classList.contains('active');
-
-    if (isOpen) {
-        closeLanguageDropdown();
-    } else {
-        openLanguageDropdown();
-    }
+  const isOpen = elements.languageDropdown.classList.contains('active');
+  
+  if (isOpen) {
+    closeLanguageDropdown();
+  } else {
+    openLanguageDropdown();
+  }
 }
 
 function openLanguageDropdown() {
-    elements.languageDropdown.classList.add('active');
-    elements.languageBtn.setAttribute('aria-expanded', 'true');
+  elements.languageDropdown.classList.add('active');
+  elements.languageBtn.setAttribute('aria-expanded', 'true');
 }
 
 function closeLanguageDropdown() {
-    elements.languageDropdown.classList.remove('active');
-    elements.languageBtn.setAttribute('aria-expanded', 'false');
+  elements.languageDropdown.classList.remove('active');
+  elements.languageBtn.setAttribute('aria-expanded', 'false');
 }
 
 function switchLanguage(lang) {
-    currentLanguage = lang;
-    updateLanguage(lang);
-    saveUserPreferences();
+  currentLanguage = lang;
+  updateLanguage(lang);
+  saveUserPreferences();
 }
 
 function updateLanguage(lang) {
-    // Update HTML lang attribute
-    document.documentElement.lang = lang === 'uz' ? 'uz' : lang === 'ru' ? 'ru' : 'en';
-
-    // Update language button
-    const flags = { uz: '🇺🇿', en: '🇺🇸', ru: '🇷🇺' };
-    const codes = { uz: 'UZ', en: 'EN', ru: 'RU' };
-
-    elements.languageBtn.querySelector('.language-flag').textContent = flags[lang];
-    elements.languageBtn.querySelector('.language-code').textContent = codes[lang];
-
-    // Update active language option
-    document.querySelectorAll('.language-option').forEach(option => {
-        option.classList.remove('active');
-        option.setAttribute('aria-selected', 'false');
-    });
-
-    const activeOption = document.querySelector(`[data-lang="${lang}"]`);
-    if (activeOption) {
-        activeOption.classList.add('active');
-        activeOption.setAttribute('aria-selected', 'true');
+  // Update HTML lang attribute
+  document.documentElement.lang = lang === 'uz' ? 'uz' : lang === 'ru' ? 'ru' : 'en';
+  
+  // Update language button
+  const flags = { uz: '🇺🇿', en: '🇺🇸', ru: '🇷🇺' };
+  const codes = { uz: 'UZ', en: 'EN', ru: 'RU' };
+  
+  elements.languageBtn.querySelector('.language-flag').textContent = flags[lang];
+  elements.languageBtn.querySelector('.language-code').textContent = codes[lang];
+  
+  // Update active language option
+  document.querySelectorAll('.language-option').forEach(option => {
+    option.classList.remove('active');
+    option.setAttribute('aria-selected', 'false');
+  });
+  
+  const activeOption = document.querySelector(`[data-lang="${lang}"]`);
+  if (activeOption) {
+    activeOption.classList.add('active');
+    activeOption.setAttribute('aria-selected', 'true');
+  }
+  
+  // Update document title
+  document.title = translations[lang].title;
+  
+  // Update all translatable elements
+  document.querySelectorAll('[data-translate]').forEach(element => {
+    const key = element.getAttribute('data-translate');
+    if (translations[lang][key]) {
+      element.textContent = translations[lang][key];
     }
-
-    // Update document title
-    document.title = translations[lang].title;
-
-    // Update all translatable elements
-    document.querySelectorAll('[data-translate]').forEach(element => {
-        const key = element.getAttribute('data-translate');
-        if (translations[lang][key]) {
-            element.textContent = translations[lang][key];
-        }
-    });
+  });
 }
 
 // ===== MOBILE MENU =====
 function initializeMobileMenu() {
-    elements.mobileMenuToggle.addEventListener('click', toggleMobileMenu);
-
-    // Close menu when clicking on nav links
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', closeMobileMenu);
-    });
+  elements.mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+  
+  // Close menu when clicking on nav links
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
 }
 
 function toggleMobileMenu() {
-    const isOpen = elements.navMenu.classList.contains('active');
-
-    if (isOpen) {
-        closeMobileMenu();
-    } else {
-        openMobileMenu();
-    }
+  const isOpen = elements.navMenu.classList.contains('active');
+  
+  if (isOpen) {
+    closeMobileMenu();
+  } else {
+    openMobileMenu();
+  }
 }
 
 function openMobileMenu() {
-    elements.navMenu.classList.add('active');
-    elements.mobileMenuToggle.classList.add('active');
-    elements.mobileMenuToggle.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden';
+  elements.navMenu.classList.add('active');
+  elements.mobileMenuToggle.classList.add('active');
+  elements.mobileMenuToggle.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
 }
 
 function closeMobileMenu() {
-    elements.navMenu.classList.remove('active');
-    elements.mobileMenuToggle.classList.remove('active');
-    elements.mobileMenuToggle.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
+  elements.navMenu.classList.remove('active');
+  elements.mobileMenuToggle.classList.remove('active');
+  elements.mobileMenuToggle.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
 }
 
 // ===== SMOOTH SCROLLING =====
 function initializeSmoothScrolling() {
-    // Handle nav link clicks
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            const targetId = link.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-                const headerHeight = elements.header.offsetHeight;
-                const targetPosition = targetElement.offsetTop - headerHeight;
-
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-
-                // Update active nav link
-                updateActiveNavLink(targetId);
-            }
+  // Handle nav link clicks
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        const headerHeight = elements.header.offsetHeight;
+        const targetPosition = targetElement.offsetTop - headerHeight;
+        
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
         });
+        
+        // Update active nav link
+        updateActiveNavLink(targetId);
+      }
     });
-
-    // Update active nav link on scroll
-    window.addEventListener('scroll', throttle(updateActiveNavOnScroll, 100));
+  });
+  
+  // Update active nav link on scroll
+  window.addEventListener('scroll', throttle(updateActiveNavOnScroll, 100));
 }
 
 function updateActiveNavLink(activeId) {
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${activeId}`) {
-            link.classList.add('active');
-        }
-    });
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${activeId}`) {
+      link.classList.add('active');
+    }
+  });
 }
 
 function updateActiveNavOnScroll() {
-    const sections = document.querySelectorAll('section[id]');
-    const scrollPosition = window.scrollY + elements.header.offsetHeight + 100;
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        const sectionId = section.getAttribute('id');
-
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            updateActiveNavLink(sectionId);
-        }
-    });
+  const sections = document.querySelectorAll('section[id]');
+  const scrollPosition = window.scrollY + elements.header.offsetHeight + 100;
+  
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
+    
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      updateActiveNavLink(sectionId);
+    }
+  });
 }
 
 // ===== SCROLL ANIMATIONS =====
 function initializeScrollAnimations() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-            }
-        });
-    }, observerOptions);
-
-    // Observe elements for animation
-    const animateElements = document.querySelectorAll(
-        '.hero-text, .hero-visual, .timeline-item, .certificate-card, .mentor-info, .language-card, .project-card, .contact-item'
-    );
-
-    animateElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+      }
     });
-
-    // Add animation classes
-    const style = document.createElement('style');
-    style.textContent = `
+  }, observerOptions);
+  
+  // Observe elements for animation
+  const animateElements = document.querySelectorAll(
+    '.hero-text, .hero-visual, .timeline-item, .certificate-card, .project-card, .contact-item'
+  );
+  
+  animateElements.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+  });
+  
+  // Add animation classes
+  const style = document.createElement('style');
+  style.textContent = `
     .animate-in {
       opacity: 1 !important;
       transform: translateY(0) !important;
     }
   `;
-    document.head.appendChild(style);
+  document.head.appendChild(style);
 }
 
 // ===== CONTACT FORM =====
 function initializeContactForm() {
-    elements.contactForm.addEventListener('submit', handleContactFormSubmit);
+  elements.contactForm.addEventListener('submit', handleContactFormSubmit);
 }
 
 function handleContactFormSubmit(e) {
-    e.preventDefault();
-
-    const formData = new FormData(elements.contactForm);
-    const name = formData.get('name');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
-
-    // Create mailto link
-    const emailBody = `Name: ${name}\n\nSubject: ${subject}\n\nMessage:\n${message}`;
-    const mailtoLink = `mailto:1ozodbek701@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-
-    // Open email client
-    window.location.href = mailtoLink;
-
-    // Show success message
-    showNotification('Email client opened successfully!', 'success');
-
-    // Reset form
-    elements.contactForm.reset();
+  e.preventDefault();
+  
+  const formData = new FormData(elements.contactForm);
+  const name = formData.get('name');
+  const subject = formData.get('subject');
+  const message = formData.get('message');
+  
+  // Create mailto link
+  const emailBody = `Name: ${name}\n\nSubject: ${subject}\n\nMessage:\n${message}`;
+  const mailtoLink = `mailto:ozodbek117s@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+  
+  // Open email client
+  window.location.href = mailtoLink;
+  
+  // Show success message
+  showNotification('Email client opened successfully!', 'success');
+  
+  // Reset form
+  elements.contactForm.reset();
 }
 
 // ===== TYPING ANIMATION =====
 function initializeTypingAnimation() {
-    const titles = [
-        translations[currentLanguage]['hero-title-text'],
-        'Full Stack Developer',
-        'Pentester',
-        'Ethical Hacker'
-    ];
-
-    const titleElement = document.querySelector('.title-text');
-    const cursorElement = document.querySelector('.typing-cursor');
-
-    let currentTitleIndex = 0;
-    let currentCharIndex = 0;
-    let isDeleting = false;
-
-    function typeText() {
-        const currentTitle = titles[currentTitleIndex];
-
-        if (isDeleting) {
-            titleElement.textContent = currentTitle.substring(0, currentCharIndex - 1);
-            currentCharIndex--;
-        } else {
-            titleElement.textContent = currentTitle.substring(0, currentCharIndex + 1);
-            currentCharIndex++;
-        }
-
-        let typeSpeed = isDeleting ? 50 : 100;
-
-        if (!isDeleting && currentCharIndex === currentTitle.length) {
-            typeSpeed = 2000; // Pause at end
-            isDeleting = true;
-        } else if (isDeleting && currentCharIndex === 0) {
-            isDeleting = false;
-            currentTitleIndex = (currentTitleIndex + 1) % titles.length;
-            typeSpeed = 500; // Pause before starting next title
-        }
-
-        setTimeout(typeText, typeSpeed);
+  const titles = [
+    translations[currentLanguage]['hero-title-text'],
+    'Software Engineer',
+    'Pentester',
+    'Ethical Hacker'
+  ];
+  
+  const titleElement = document.querySelector('.title-text');
+  const cursorElement = document.querySelector('.typing-cursor');
+  
+  let currentTitleIndex = 0;
+  let currentCharIndex = 0;
+  let isDeleting = false;
+  
+  function typeText() {
+    const currentTitle = titles[currentTitleIndex];
+    
+    if (isDeleting) {
+      titleElement.textContent = currentTitle.substring(0, currentCharIndex - 1);
+      currentCharIndex--;
+    } else {
+      titleElement.textContent = currentTitle.substring(0, currentCharIndex + 1);
+      currentCharIndex++;
     }
-
-    // Start typing animation after a delay
-    setTimeout(typeText, 1000);
+    
+    let typeSpeed = isDeleting ? 50 : 100;
+    
+    if (!isDeleting && currentCharIndex === currentTitle.length) {
+      typeSpeed = 2000; // Pause at end
+      isDeleting = true;
+    } else if (isDeleting && currentCharIndex === 0) {
+      isDeleting = false;
+      currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+      typeSpeed = 500; // Pause before starting next title
+    }
+    
+    setTimeout(typeText, typeSpeed);
+  }
+  
+  // Start typing animation after a delay
+  setTimeout(typeText, 1000);
 }
 
 // ===== UTILITY FUNCTIONS =====
 function throttle(func, limit) {
-    let inThrottle;
-    return function() {
-        const args = arguments;
-        const context = this;
-        if (!inThrottle) {
-            func.apply(context, args);
-            inThrottle = true;
-            setTimeout(() => inThrottle = false, limit);
-        }
-    };
+  let inThrottle;
+  return function() {
+    const args = arguments;
+    const context = this;
+    if (!inThrottle) {
+      func.apply(context, args);
+      inThrottle = true;
+      setTimeout(() => inThrottle = false, limit);
+    }
+  };
 }
 
 function showNotification(message, type = 'info') {
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.textContent = message;
-
-    // Style the notification
-    Object.assign(notification.style, {
-        position: 'fixed',
-        top: '20px',
-        right: '20px',
-        background: type === 'success' ? 'var(--primary-color)' : 'var(--accent-color)',
-        color: 'white',
-        padding: 'var(--space-sm) var(--space-md)',
-        borderRadius: 'var(--radius-md)',
-        boxShadow: '0 10px 30px var(--shadow)',
-        zIndex: '10000',
-        transform: 'translateX(100%)',
-        transition: 'transform var(--transition-normal)'
-    });
-
-    document.body.appendChild(notification);
-
-    // Animate in
+  // Create notification element
+  const notification = document.createElement('div');
+  notification.className = `notification notification-${type}`;
+  notification.textContent = message;
+  
+  // Style the notification
+  Object.assign(notification.style, {
+    position: 'fixed',
+    top: '20px',
+    right: '20px',
+    background: type === 'success' ? 'var(--primary-color)' : 'var(--accent-color)',
+    color: 'white',
+    padding: 'var(--space-sm) var(--space-md)',
+    borderRadius: 'var(--radius-md)',
+    boxShadow: '0 10px 30px var(--shadow)',
+    zIndex: '10000',
+    transform: 'translateX(100%)',
+    transition: 'transform var(--transition-normal)'
+  });
+  
+  document.body.appendChild(notification);
+  
+  // Animate in
+  setTimeout(() => {
+    notification.style.transform = 'translateX(0)';
+  }, 100);
+  
+  // Remove after 3 seconds
+  setTimeout(() => {
+    notification.style.transform = 'translateX(100%)';
     setTimeout(() => {
-        notification.style.transform = 'translateX(0)';
-    }, 100);
-
-    // Remove after 3 seconds
-    setTimeout(() => {
-        notification.style.transform = 'translateX(100%)';
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.parentNode.removeChild(notification);
-            }
-        }, 300);
-    }, 3000);
+      if (notification.parentNode) {
+        notification.parentNode.removeChild(notification);
+      }
+    }, 300);
+  }, 3000);
 }
 
 // ===== USER PREFERENCES =====
 function saveUserPreferences() {
-    const preferences = {
-        language: currentLanguage,
-        theme: currentTheme
-    };
-    localStorage.setItem('portfolioPreferences', JSON.stringify(preferences));
+  const preferences = {
+    language: currentLanguage,
+    theme: currentTheme
+  };
+  localStorage.setItem('portfolioPreferences', JSON.stringify(preferences));
 }
 
 function loadUserPreferences() {
-    const saved = localStorage.getItem('portfolioPreferences');
-    if (saved) {
-        try {
-            const preferences = JSON.parse(saved);
-            currentLanguage = preferences.language || 'uz';
-            currentTheme = preferences.theme || 'dark';
-        } catch (e) {
-            console.warn('Failed to load user preferences:', e);
-        }
-    } else {
-        // Check system preferences
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-            currentTheme = 'light';
-        }
-
-        // Check browser language
-        const browserLang = navigator.language.split('-')[0];
-        if (['en', 'ru'].includes(browserLang)) {
-            currentLanguage = browserLang;
-        }
+  const saved = localStorage.getItem('portfolioPreferences');
+  if (saved) {
+    try {
+      const preferences = JSON.parse(saved);
+      currentLanguage = preferences.language || 'uz';
+      currentTheme = preferences.theme || 'dark';
+    } catch (e) {
+      console.warn('Failed to load user preferences:', e);
     }
+  } else {
+    // Check system preferences
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      currentTheme = 'light';
+    }
+    
+    // Check browser language
+    const browserLang = navigator.language.split('-')[0];
+    if (['en', 'ru'].includes(browserLang)) {
+      currentLanguage = browserLang;
+    }
+  }
 }
 
 // ===== PERFORMANCE OPTIMIZATIONS =====
 // Preload critical images
 function preloadImages() {
-    const imageUrls = [
-        // Add any image URLs here when you have actual images
-    ];
-
-    imageUrls.forEach(url => {
-        const img = new Image();
-        img.src = url;
-    });
+  const imageUrls = [
+    // Add any image URLs here when you have actual images
+  ];
+  
+  imageUrls.forEach(url => {
+    const img = new Image();
+    img.src = url;
+  });
 }
 
 // Lazy load images
 function initializeLazyLoading() {
-    if ('IntersectionObserver' in window) {
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.dataset.src;
-                    img.classList.remove('lazy');
-                    imageObserver.unobserve(img);
-                }
-            });
-        });
-
-        document.querySelectorAll('img[data-src]').forEach(img => {
-            imageObserver.observe(img);
-        });
-    }
+  if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.classList.remove('lazy');
+          imageObserver.unobserve(img);
+        }
+      });
+    });
+    
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      imageObserver.observe(img);
+    });
+  }
 }
 
 // ===== ERROR HANDLING =====
 window.addEventListener('error', (e) => {
-    console.error('JavaScript error:', e.error);
-    // You could send this to an error tracking service
+  console.error('JavaScript error:', e.error);
+  // You could send this to an error tracking service
 });
 
 // ===== ACCESSIBILITY ENHANCEMENTS =====
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
-    // Escape key closes dropdowns and mobile menu
-    if (e.key === 'Escape') {
-        closeLanguageDropdown();
-        closeMobileMenu();
-    }
-
-    // Tab navigation enhancement
-    if (e.key === 'Tab') {
-        document.body.classList.add('keyboard-navigation');
-    }
+  // Escape key closes dropdowns and mobile menu
+  if (e.key === 'Escape') {
+    closeLanguageDropdown();
+    closeMobileMenu();
+  }
+  
+  // Tab navigation enhancement
+  if (e.key === 'Tab') {
+    document.body.classList.add('keyboard-navigation');
+  }
 });
 
 document.addEventListener('mousedown', () => {
-    document.body.classList.remove('keyboard-navigation');
+  document.body.classList.remove('keyboard-navigation');
 });
 
 // ===== INITIALIZATION COMPLETE =====
