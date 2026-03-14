@@ -944,6 +944,66 @@ a:hover {
 }
 
 
+/* ===== TECHNOLOGIES & SKILLS SECTION ===== */
+
+.skills {
+    padding: var(--space-2xl) 0;
+    background: var(--surface-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--space-xl);
+}
+
+.skill-group {
+    background: var(--bg-color);
+    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-normal);
+}
+
+.skill-group:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+.skill-group-title {
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-xs);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.skills .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+.skills .skill-tag {
+    background: var(--surface-color);
+    color: var(--text-primary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    display: inline-block;
+    transition: all var(--transition-fast);
+}
+
+.skills .skill-tag:hover {
+    background: rgba(0, 212, 255, 0.1);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+
 /* ===== MENTOR SECTION ===== */
 
 .mentor {
@@ -1542,6 +1602,9 @@ a:hover {
     .certificates-grid {
         grid-template-columns: 1fr;
     }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
     .languages-grid {
         grid-template-columns: 1fr;
     }
@@ -1637,6 +1700,7 @@ select:focus-visible {
     .hero,
     .experience,
     .certificates,
+    .skills,
     .projects,
     .contact {
         break-inside: avoid;
