@@ -1200,6 +1200,19 @@ a:hover {
     justify-content: center;
 }
 
+.project-links-double {
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.project-card-brand .project-icon {
+    font-size: 1.75rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* ===== CONTACT SECTION ===== */
 
@@ -1261,6 +1274,17 @@ a:hover {
 
 .contact-details a:hover {
     color: var(--primary-color);
+}
+
+.contact-hint {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin: var(--space-xs) 0 0;
+}
+
+.contact-item-telegram {
+    border-color: rgba(0, 212, 255, 0.3);
+    background: linear-gradient(135deg, var(--surface-color) 0%, rgba(0, 212, 255, 0.05) 100%);
 }
 
 
