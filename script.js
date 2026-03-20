@@ -55,6 +55,14 @@ const translations = {
     'cert-problem-solving-desc': 'Meta professional sertifikat — algoritmik yechish',
     'cert-sql-title': 'SQL',
     'cert-sql-desc': 'Meta professional sertifikat — SQL va ma\'lumotlar bazasi',
+    'cert-genai-specialization-title': 'Intro to Generative AI (Specialization)',
+    'cert-genai-specialization-desc': 'Coursera’da onlayn, non-credit Specialization: "Intro to Generative AI" — Core Concepts uchun boshlang‘ich primer kursi muvaffaqiyatli yakunlandi.',
+    'cert-genai-intro-title': 'Introduction to Generative AI (Google Cloud)',
+    'cert-genai-intro-desc': 'Google Cloud universiteti tomonidan Coursera’da taklif etilgan non-credit onlayn kurs.',
+    'cert-genai-course2-title': 'Generative AI (Course)',
+    'cert-genai-course2-desc': 'Coursera’da Generative AI bo‘yicha onlayn kurs (sertifikat).',
+    'cert-genai-course3-title': 'Generative AI (Course)',
+    'cert-genai-course3-desc': 'Coursera’da Generative AI bo‘yicha onlayn kurs (sertifikat).',
     'cert-view': 'Ko\'rish',
     'skills-title': 'Texnologiyalar va ko\'nikmalar',
     'skills-subtitle': 'Ishlatadigan texnologiyalar va asboblar',
@@ -71,6 +79,7 @@ const translations = {
     'mentor-description': 'Ustozim menga dasturlash bo\'yicha bilim beradi. Python, Web Design va Backend yo\'nalishlarida dars beradi.',
     'projects-title': 'Loyihalar',
     'projects-subtitle': 'Mening Telegram botlarim',
+    'projects-tech-title': 'Asosiy texnologiyalar',
     'project-botchioka-desc': 'Mening brendim. Kanalda barcha yangiliklar, bot buyurtma berish uchun @BotchiOkabot ga yozing — sizga bot yasab beramiz.',
     'project-valyuta-desc': 'Aqlli valyuta boti: kurslar, kundalik yangilanish, 24/7 ishlaydi.',
     'project-fiileebot-desc': 'Fayllaringizni xavfsiz saqlash va boshqarish.',
@@ -137,6 +146,14 @@ const translations = {
     'cert-problem-solving-desc': 'Meta professional certificate — algorithmic problem solving',
     'cert-sql-title': 'SQL',
     'cert-sql-desc': 'Meta professional certificate — SQL and databases',
+    'cert-genai-specialization-title': 'Intro to Generative AI (Specialization)',
+    'cert-genai-specialization-desc': 'Coursera has successfully completed the online, non-credit Specialization: Intro to Generative AI — A Beginner’s Primer on Core Concepts.',
+    'cert-genai-intro-title': 'Introduction to Generative AI (Google Cloud)',
+    'cert-genai-intro-desc': 'An online, non-credit course from the University of Google Cloud offered on Coursera.',
+    'cert-genai-course2-title': 'Generative AI (Course)',
+    'cert-genai-course2-desc': 'An online Coursera course on Generative AI (certificate).',
+    'cert-genai-course3-title': 'Generative AI (Course)',
+    'cert-genai-course3-desc': 'An online Coursera course on Generative AI (certificate).',
     'cert-view': 'View',
     'skills-title': 'Technologies & Skills',
     'skills-subtitle': 'Technologies and tools I use',
@@ -153,6 +170,7 @@ const translations = {
     'mentor-description': 'My mentor shares his knowledge with me in programming. He teaches Python, Web Design and Backend.',
     'projects-title': 'Projects',
     'projects-subtitle': 'My Telegram bots',
+    'projects-tech-title': 'Key technologies',
     'project-botchioka-desc': 'My brand. All news on the channel; write to @BotchiOkabot to order a custom bot — we build bots for you.',
     'project-valyuta-desc': 'Smart currency bot: exchange rates, daily updates, 24/7.',
     'project-fiileebot-desc': 'Store and manage your files securely.',
@@ -219,6 +237,14 @@ const translations = {
     'cert-problem-solving-desc': 'Meta профессиональный сертификат — алгоритмическое решение',
     'cert-sql-title': 'SQL',
     'cert-sql-desc': 'Meta профессиональный сертификат — SQL и базы данных',
+    'cert-genai-specialization-title': 'Intro to Generative AI (Специализация)',
+    'cert-genai-specialization-desc': 'Coursera успешно завершила онлайн-специализацию без зачетных единиц: Intro to Generative AI — вводный primer по Core Concepts.',
+    'cert-genai-intro-title': 'Introduction to Generative AI (Google Cloud)',
+    'cert-genai-intro-desc': 'Онлайн-курс без зачетных единиц от университета Google Cloud, предлагаемый на Coursera.',
+    'cert-genai-course2-title': 'Generative AI (Курс)',
+    'cert-genai-course2-desc': 'Онлайн-курс Coursera по Generative AI (сертификат).',
+    'cert-genai-course3-title': 'Generative AI (Курс)',
+    'cert-genai-course3-desc': 'Онлайн-курс Coursera по Generative AI (сертификат).',
     'cert-view': 'Посмотреть',
     'skills-title': 'Технологии и навыки',
     'skills-subtitle': 'Технологии и инструменты, которые я использую',
@@ -235,6 +261,7 @@ const translations = {
     'mentor-description': 'Мой наставник передаёт мне знания по программированию. Ведёт занятия по Python, Web Design и Backend.',
     'projects-title': 'Проекты',
     'projects-subtitle': 'Мои Telegram-боты',
+    'projects-tech-title': 'Ключевые технологии',
     'project-botchioka-desc': 'Мой бренд. Все новости в канале; напишите @BotchiOkabot, чтобы заказать бота — мы создадим бота для вас.',
     'project-valyuta-desc': 'Умный бот курсов валют: курсы, ежедневное обновление, 24/7.',
     'project-fiileebot-desc': 'Безопасное хранение и управление вашими файлами.',
@@ -592,7 +619,7 @@ function initializeScrollAnimations() {
   
   // Observe elements for animation
   const animateElements = document.querySelectorAll(
-    '.hero-text, .hero-visual, .timeline-item, .certificate-card, .skill-group, .project-card, .contact-item'
+    '.hero-text, .hero-visual, .timeline-item, .certificate-card, .skill-group, .project-card, .projects-tech-section, .contact-item'
   );
   
   animateElements.forEach(el => {

@@ -83,13 +83,17 @@
 - **Software Engineer** (Meta)
 - **Problem Solving** (Meta)
 - **SQL** (Meta)
+- **Intro to Generative AI — Core Concepts (Specialization)** (Coursera)
+- **Introduction to Generative AI (Google Cloud)** (Coursera)
+- **Generative AI (Course)** (Coursera)
+- **Generative AI (Course)** (Coursera)
 
 ---
 
 ## Contact
 
 [![Telegram](https://img.shields.io/badge/Telegram-@ozodbekk0701-26A5E4?style=for-the-badge&logo=telegram)](https://t.me/ozodbekk0701)
-[![GitHub](https://img.shields.io/badge/GitHub-ozodbek225-181717?style=for-the-badge&logo=github)](https://github.com/ozodbek225)
+[![GitHub](https://img.shields.io/badge/GitHub-Ozodbeek7-181717?style=for-the-badge&logo=github)](https://github.com/Ozodbeek7)
 [![Email](https://img.shields.io/badge/Email-1ozodbek701@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:1ozodbek701@gmail.com)
 
 ---

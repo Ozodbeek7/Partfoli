@@ -1274,6 +1274,37 @@ a:hover {
 }
 
 
+/* ===== PROJECTS TECH BADGES ===== */
+
+.projects-tech-section {
+    padding: var(--space-xl);
+    border: 1px solid var(--border-color);
+    background: var(--surface-color);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-2xl);
+    box-shadow: 0 10px 30px var(--shadow);
+}
+
+.projects-tech-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-md);
+    color: var(--text-primary);
+    letter-spacing: 0.2px;
+}
+
+.projects-tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-xs);
+}
+
+.projects-tech-badges .tech-tag {
+    font-size: 0.8rem;
+}
+
 /* ===== CONTACT SECTION ===== */
 
 .contact {
