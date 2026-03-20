@@ -678,13 +678,26 @@
                     <!-- RunCity -->
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-icon">🏙️</div>
+                            <div class="project-icon">
+                                <img
+                                    src="https://runcityy.up.railway.app/favicon.ico"
+                                    alt="RunCity"
+                                    class="project-thumb-img"
+                                    loading="lazy"
+                                    onload="this.parentElement.querySelector('.project-icon-emoji').style.display='none'"
+                                    onerror="this.style.display='none'"
+                                />
+                                <span class="project-icon-emoji" aria-hidden="true">🏙️</span>
+                            </div>
                             <div class="project-status">
                                 <span class="status-badge active">Faol</span>
                             </div>
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">RunCity</h3>
+                            <p class="project-mini-desc" data-translate="project-runcity-mini">
+                                GPS va heatmap orqali shahar hududini zabt eting.
+                            </p>
                             <p class="project-description" data-translate="project-runcity-desc">
                                 RunCity — “Shaharni Zabt Et” web loyihasi. O‘yin logikasi va interaktiv tajriba orqali shaharni zabt etish g‘oyasi amalga oshirilgan.
                             </p>
