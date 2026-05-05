@@ -1769,3 +1769,149 @@ select:focus-visible {
         break-inside: avoid;
     }
 }
+
+
+/* ===== CYBERSECURITY SECTION ===== */
+
+.cyber {
+    padding: var(--space-2xl) 0;
+    background: var(--surface-color);
+}
+
+.cyber-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+}
+
+.cyber-skill-card {
+    background: var(--bg-color);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.cyber-skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.cyber-skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px var(--shadow);
+    border-color: var(--primary-color);
+}
+
+.cyber-skill-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-md);
+    color: white;
+}
+
+.cyber-skill-name {
+    color: var(--text-primary);
+    margin-bottom: var(--space-sm);
+    font-size: 1.15rem;
+}
+
+.cyber-skill-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Sub-block titles inside cyber section */
+.cyber-block-title {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: var(--space-lg);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* CTF Platforms */
+.cyber-platforms-block {
+    margin-bottom: var(--space-2xl);
+}
+
+.cyber-platforms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-md);
+}
+
+.cyber-platform-card {
+    background: var(--bg-color);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all var(--transition-normal);
+    display: block;
+}
+
+.cyber-platform-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px var(--shadow);
+    color: var(--text-primary);
+}
+
+.cyber-platform-name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: var(--space-xs);
+}
+
+.cyber-platform-desc {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Tools */
+.cyber-tools-block {
+    text-align: center;
+}
+
+.cyber-tools-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-xs);
+}
+
+.cyber-tools-block .skill-tag {
+    background: var(--bg-color);
+    color: var(--text-primary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-fast);
+}
+
+.cyber-tools-block .skill-tag:hover {
+    background: rgba(0, 212, 255, 0.1);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
